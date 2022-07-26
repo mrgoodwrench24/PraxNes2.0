@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CheatSheetController">
+   <children>
+      <VBox alignment="CENTER" layoutX="20.0" prefHeight="620.0" prefWidth="400.0">
+         <children>
+            <Label text="Initial Programs">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="initialTableView" prefHeight="500.0" prefWidth="400.0">
+              <columns>
+                <TableColumn fx:id="initialCodeTxt" prefWidth="100.0" text="Program Code" />
+                <TableColumn fx:id="initialNameTxt" prefWidth="300.0" text="Program Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="440.0" prefHeight="620.0" prefWidth="400.0">
+         <children>
+            <Label text="Secondary Programs">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="secondaryTableView" prefHeight="500.0" prefWidth="400.0">
+              <columns>
+                <TableColumn fx:id="secondaryCodeTxt" prefWidth="100.0" text="Program Code" />
+                <TableColumn fx:id="secondaryNameTxt" prefWidth="300.0" text="Program Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="870.0" prefHeight="620.0" prefWidth="400.0">
+         <children>
+            <Label text="Exempt Programs">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="exemptTableView" prefHeight="500.0" prefWidth="400.0">
+              <columns>
+                <TableColumn fx:id="exemptCodeTxt" prefWidth="100.0" text="Program Code" />
+                <TableColumn fx:id="exemptNameTxt" prefWidth="300.0" text="Program Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutY="620.0" prefHeight="100.0" prefWidth="1280.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onActionExit" text="Back" />
+         </children>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
